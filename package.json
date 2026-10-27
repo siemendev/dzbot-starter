@@ -1,0 +1,28 @@
+{
+  "name": "dzbot-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A DayZ Discord bot and website built on dzbot: slash commands, a webhook-driven kill feed and Sign in with dzbot.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "start": "tsx --env-file=.env src/index.ts",
+    "register-commands": "tsx --env-file=.env src/register-commands.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dzbot/sdk": "^0.1.0",
+    "discord.js": "^14.16.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
